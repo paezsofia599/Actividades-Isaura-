@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida — Alejandro Rivera</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- 1. Barra de navegación -->
+  <header class="topbar" id="inicio">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a href="#inicio" class="logo" aria-label="Inicio - Logotipo AR">AR</a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Reto 4: Botón para cambiar entre modo claro y oscuro -->
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Cambiar entre tema claro y oscuro" aria-pressed="false" title="Cambiar entre tema claro y oscuro">
+        ◐
+      </button>
+    </nav>
+  </header>
+
+  <!-- 2. Presentación principal -->
+  <section class="hero" aria-label="Presentación principal">
+    <img src="img/banner.jpg" alt="Banner de portada de Alejandro Rivera" class="hero-banner">
+
+    <div class="hero-content">
+      <img src="img/alejandro.jpg" alt="Fotografía de Alejandro Rivera" class="hero-avatar">
+
+      <div class="hero-info">
+        <h1>ALEJANDRO RIVERA</h1>
+        <h2>Senior Full Stack Developer</h2>
+        <p>
+          Desarrollador Full Stack con experiencia en arquitectura de aplicaciones web escalables,
+          interfaces limpias y accesibles, y soluciones robustas de extremo a extremo.
+        </p>
+        <p class="hero-location">Bogotá, Colombia</p>
+
+        <div class="hero-actions">
+          <!-- Reto 6: Descargar o abrir archivo PDF -->
+          <a href="cv/hoja-de-vida-alejandro-rivera.pdf" class="btn btn-primary" download="Hoja-de-Vida-Alejandro-Rivera.pdf">Descargar CV</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+
+      <!-- Contenedor lateral derecho con imagen de fondo -->
+      <div class="hero-code-visual" role="img" aria-label="Portátil con código en el lado derecho">
+        <span>&lt;/&gt;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenedor general para dos columnas con CSS Grid -->
+  <div class="layout-columns">
+
+    <!-- 3. Columna izquierda -->
+    <aside class="sidebar" aria-label="Información complementaria">
+
+      <!-- A. Tarjeta de contacto -->
+      <section class="card contact-card" id="contacto">
+        <div class="section-header">
+          <span class="section-icon" aria-hidden="true">✉</span>
+          <h2>CONTACTO</h2>
+        </div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <a href="mailto:alejandro.rivera@ejemplo.com">alejandro.rivera@ejemplo.com</a>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">📞</span>
+            <span>+57 300 000 0000</span>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">in</span>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/alejandro-rivera</a>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true">⌘</span>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/alejandro-rivera</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- B. Tarjeta de habilidades técnicas + Reto 5 (Barras de dominio) -->
+      <section class="card skills-card" id="habilidades">
+        <div class="section-header">
+          <span class="section-icon" aria-hidden="true">⚡</span>
+          <h2>HABILIDADES</h2>
+        </div>
+
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul class="skills-list">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="skills-list">
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>Java</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Bases de datos</h3>
+          <ul class="skills-list">
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Herramientas</h3>
+          <ul class="skills-list">
+            <li>Docker</li>
+            <li>Git</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+
+        <!-- Reto 5: Barras visuales de nivel de dominio -->
+        <div class="skill-group proficiency-group">
+          <h3>Nivel de dominio</h3>
+
+          <div class="proficiency-item">
+            <div class="proficiency-label">
+              <span>React &amp; TypeScript</span>
+              <span>92%</span>
+            </div>
+            <div class="proficiency-track" aria-hidden="true">
+              <div class="proficiency-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-item">
+            <div class="proficiency-label">
+              <span>Node.js &amp; Python</span>
+              <span>88%</span>
+            </div>
+            <div class="proficiency-track" aria-hidden="true">
+              <div class="proficiency-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-item">
+            <div class="proficiency-label">
+              <span>PostgreSQL &amp; MySQL</span>
+              <span>85%</span>
+            </div>
+            <div class="proficiency-track" aria-hidden="true">
+              <div class="proficiency-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <div class="proficiency-item">
+            <div class="proficiency-label">
+              <span>Docker &amp; AWS</span>
+              <span>80%</span>
+            </div>
+            <div class="proficiency-track" aria-hidden="true">
+              <div class="proficiency-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reto 3: Sección de habilidades blandas -->
+      <section class="card soft-skills-card" id="habilidades-blandas">
+        <div class="section-header">
+          <span class="section-icon" aria-hidden="true">🤝</span>
+          <h2>HABILIDADES BLANDAS</h2>
+        </div>
+        <ul class="skills-list">
+          <li>Liderazgo técnico</li>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación asertiva</li>
+          <li>Resolución de problemas</li>
+          <li>Adaptabilidad</li>
+        </ul>
+      </section>
+
+    </aside>
+
+    <!-- 4. Columna derecha -->
+    <main class="main-content">
+
+      <!-- A. Perfil profesional -->
+      <section class="card" id="perfil-profesional">
+        <div class="section-header">
+          <span class="section-icon" aria-hidden="true">👤</span>
+          <h2>PERFIL PROFESIONAL</h2>
+        </div>
+        <p class="profile-text">
+          Ingeniero de Sistemas con más de 8 años de experiencia en desarrollo de software,
+          especializado en tecnologías web y arquitecturas escalables. Apasionado por la innovación,
+          el trabajo en equipo y la creación de soluciones que generen impacto real.
+        </p>
+      </section>
+
+      <!-- B. Experiencia profesional -->
+      <section class="card" id="experiencia">
+        <div class="section-header">
+          <span class="section-icon" aria-hidden="true">💼</span>
+          <h2>EXPERIENCIA PROFESIONAL</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Full Stack Developer</h3>
+                <p class="company-name">TechSolutions S.A.</p>
+              </div>
+              <span class="timeline-date">2021 – Actualidad</span>
+            </div>
+            <ul class="responsibilities">
+              <li>Lideré el desarrollo de una plataforma SaaS con millones de usuarios.</li>
+              <li>Optimicé el rendimiento en un 40 % y mejoré la experiencia del usuario.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3>Full Stack Developer</h3>
+                <p class="company-name">Innovatech Ltd.</p>
+              </div>
+              <span class="timeline-date">2018 – 2021</span>
+            </div>
+            <ul class="responsibilities">
+              <li>Desarrollé aplicaciones web con React, Node.js y PostgreSQL.</li>
+              <li>Implementé nuevas funcionalidades y realicé mantenimiento.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3>Backend Developer</h3>
+                <p class="company-name">Digital Core</p>
+              </div>
+              <span class="timeline-date">2015 – 2018</span>
+            </div>
+            <ul class="responsibilities">
+              <li>Construí API REST y servicios escalables en Python.</li>
+              <li>Gestioné bases de datos y optimicé consultas.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- C. Proyectos destacados (Incluye Reto 1 hover y Reto 2 cuarta tarjeta) -->
+      <section class="card" id="proyectos">
+        <div class="section-header">
+          <span class="section-icon" aria-hidden="true">🚀</span>
+          <h2>PROYECTOS DESTACADOS</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="img/proyecto1.jpg" alt="Tienda en línea de la Plataforma E-commerce">
+            <h3>Plataforma E-commerce</h3>
+            <p>Tienda en línea con pagos seguros y panel de administración.</p>
+            <ul class="project-tech">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <img src="img/proyecto2.jpg" alt="Tablero administrativo del Sistema de gestión empresarial">
+            <h3>Sistema de gestión empresarial</h3>
+            <p>Plataforma para administrar proyectos y equipos.</p>
+            <ul class="project-tech">
+              <li>Angular</li>
+              <li>Java</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <img src="img/proyecto3.jpg" alt="Analítica de datos en tiempo real de la API">
+            <h3>API de analítica</h3>
+            <p>Servicio para análisis de datos en tiempo real.</p>
+            <ul class="project-tech">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>MySQL</li>
+            </ul>
+          </article>
+
+          <!-- Reto 2: Cuarta tarjeta de proyecto -->
+          <article class="project-card">
+            <img src="img/proyecto1.jpg" alt="Portal de monitoreo y despliegue en la nube">
+            <h3>Panel de monitoreo Cloud</h3>
+            <p>Visualización de métricas de contenedores, latencia y disponibilidad de servicios.</p>
+            <ul class="project-tech">
+              <li>TypeScript</li>
+              <li>Docker</li>
+              <li>AWS</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- D. Formación y certificaciones -->
+      <section class="card" id="formacion">
+        <div class="section-header">
+          <span class="section-icon" aria-hidden="true">🎓</span>
+          <h2>FORMACIÓN Y CERTIFICACIONES</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3>Ingeniería de Sistemas</h3>
+                <p class="company-name">Universidad Nacional de Colombia</p>
+              </div>
+              <span class="timeline-date">2011 – 2016</span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-header">
+              <div>
+                <h3>AWS Solutions Architect</h3>
+                <p class="company-name">Amazon Web Services</p>
+              </div>
+              <span class="timeline-date">2019</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- 5. Pie de página -->
+  <footer class="footer">
+    <p class="footer-copy">© 2025 Alejandro Rivera. Todos los derechos reservados.</p>
+
+    <nav class="footer-links" aria-label="Redes sociales y contacto">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+        <span class="footer-icon" aria-hidden="true">in</span>
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <span class="footer-icon" aria-hidden="true">⌘</span>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+        <span class="footer-icon" aria-hidden="true">▶</span>
+      </a>
+      <a href="mailto:alejandro.rivera@ejemplo.com" aria-label="Correo electrónico" title="Correo electrónico">
+        <span class="footer-icon" aria-hidden="true">✉</span>
+      </a>
+    </nav>
+  </footer>
+
+  <!-- Inicio del bloque donde se ejecuta el control de tema claro y oscuro -->
+  <script id="control-tema-claro-oscuro">
+    (function () {
+      const botonTema = document.getElementById("themeToggle");
+      if (!botonTema) return;
+
+      botonTema.addEventListener("click", function () {
+        const esOscuro = document.body.classList.toggle("dark-theme");
+        botonTema.setAttribute("aria-pressed", String(esOscuro));
+        botonTema.textContent = esOscuro ? "☀" : "◐";
+      });
+    })();
+  </script>
+  <!-- Fin del bloque donde se ejecuta el control de tema claro y oscuro -->
+
+</body>
+</html>
